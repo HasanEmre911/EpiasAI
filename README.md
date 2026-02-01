@@ -15,10 +15,10 @@ Proje iki ana modülden oluşur:
 * **Mevsimsellik:** Saatlik, Günlük ve Aylık döngüleri (Seasonality) öğrenir.
 
 ### 📊 2. Akıllı Fatura & Teklif Analizi
-* **Tahmin Modeli:** Random Forest Regressor kullanılarak gelecek ayın saatlik fiyatları tahmin edilir.
-* **Tarife Analizi:** T1 (Gündüz), T2 (Puant) ve T3 (Gece) tüketim profiline göre maliyet hesaplar.
-* **Detaylı Hesaplama:** Sadece PTF değil, YEKDEM maliyeti ve Şirket Kar Marjı (%3, %5 vb.) dahil edilerek net kıyaslama yapar.
-* **Karar Destek:** Özel şirketlerin sunduğu "Sabit Fiyat" tekliflerinin piyasa beklentisine göre kârlı olup olmadığını raporlar.
+* **Tahmin Motoru (Neural Network):** Scikit-Learn **MLP Regressor (Multi-Layer Perceptron)** mimarisi kullanılarak, basit regresyon modellerinin aksine piyasadaki **enflasyonist trendi** ve **logaritmik fiyat artışlarını** otonom olarak öğrenir.
+* **GES & Duck Curve Simülasyonu:** Güneş Enerjisi Santrallerinin (GES) gündüz fiyatlarını baskılamasını (T1 ucuzluğu) ve Puant (T2) saatlerindeki yükselişi analiz ederek **Saatlik Oransal Dağılım (Hourly Ratio Reconstruction)** uygular.
+* **Detaylı Maliyet Hesabı:** Sadece PTF değil; **YEKDEM** birim maliyeti ve tedarik şirketlerinin uyguladığı **Kâr Marjı / Risk Primi** (%3, %5 vb.) parametrelerini de hesaba katarak "Net Tüketici Maliyeti"ni bulur.
+* **Karar Destek Sistemi:** Özel şirketlerin sunduğu "Sabit Fiyat" tekliflerini, Yapay Zeka'nın öngördüğü piyasa maliyetleriyle kıyaslar ve kullanıcıya **"Kabul Et"** veya **"Reddet"** (Arbitraj fırsatı analizi) önerisinde bulunur.
 
 ### 🛠 3. Veri İşleme (ETL)
 * **Robust Import:** Bozuk CSV formatlarını, Excel (.xlsx) dosyalarını ve hatalı sütun yapılarını otomatik düzelten güçlü bir veri birleştirme modülü.
@@ -85,6 +85,7 @@ Pull request'ler kabul edilir. Büyük değişiklikler için lütfen önce tart�
 ├── fatura_hesapla.py      # Kullanıcı Arayüzü (Fatura Kıyaslama)
 ├── requirements.txt       # Gerekli kütüphaneler
 └── README.md              # Proje dokümantasyonu
+
 
 
 
