@@ -66,8 +66,6 @@ ROI (Yatırım Getirisi): Simülasyon ortamında 10.000 TL başlangıç sermayes
 🤝 Katkıda Bulunma
 Pull request'ler kabul edilir. Büyük değişiklikler için lütfen önce tartışma başlatın.
 
-📜 Lisans
-MIT
 
 
 ---
@@ -87,6 +85,7 @@ MIT
 ├── fatura_hesapla.py      # Kullanıcı Arayüzü (Fatura Kıyaslama)
 ├── requirements.txt       # Gerekli kütüphaneler
 └── README.md              # Proje dokümantasyonu
+
 
 
 
