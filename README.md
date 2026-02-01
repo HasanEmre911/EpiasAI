@@ -72,26 +72,6 @@ MIT
 
 ---
 
-### 💡 Ekstra Tavsiyeler (GitHub İçin)
-
-1.  **`requirements.txt` Oluştur:**
-    Projeni başkalarının çalıştırabilmesi için terminale şu komutu yazarak bir dosya oluştur:
-    ```bash
-    pip freeze > requirements.txt
-    ```
-    Bu dosyayı da GitHub'a yüklemeyi unutma.
-
-2.  **Ekran Görüntüsü (Screenshot):**
-    GitHub'da görsellik çok önemlidir.
-    * `fatura_hesapla.py` çalışırken çıkan o detaylı raporun ekran görüntüsünü al.
-    * `src/expert_egitim.png` grafiğini al.
-    * Bunları README dosyasının içine sürükleyip bırakırsan (veya `![Resim](resim_yolu.png)` koduyla eklersen) projen çok daha havalı görünür.
-
-3.  **Başlık:** "kullaniciadi" yazan yere kendi GitHub kullanıcı adını yazmayı unutma.
-
-Hayırlı olsun! Çok sağlam bir proje oldu. 🧿
-
-
 ## 📂 Proje Yapısı
 
 ```bash
@@ -107,5 +87,6 @@ Hayırlı olsun! Çok sağlam bir proje oldu. 🧿
 ├── fatura_hesapla.py      # Kullanıcı Arayüzü (Fatura Kıyaslama)
 ├── requirements.txt       # Gerekli kütüphaneler
 └── README.md              # Proje dokümantasyonu
+
 
 
